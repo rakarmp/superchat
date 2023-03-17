@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, BrowserRouter as Router } from "react-router-dom";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -62,23 +62,23 @@ const Register = () => {
   return (
     <div className="formContainer">
       <div className="formWrapper">
-        <span className="logo">Lama Chat</span>
+        <span className="logo">Super Chat</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
-          <input required type="text" placeholder="display name" />
+          <input required type="text" placeholder="name" />
           <input required type="email" placeholder="email" />
           <input required type="password" placeholder="password" />
           <input required style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
             <img src={Add} alt="" />
-            <span>Add an avatar</span>
+            <span>Tambahkan avatar</span>
           </label>
-          <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
-          {err && <span>Something went wrong</span>}
+          <button disabled={loading}>Register</button>
+          {loading && "Mengunggah dan mengompresi gambar harap tunggu..."}
+          {err && <span>Ada yang salah</span>}
         </form>
         <p>
-          You do have an account? <Link to="/register">Login</Link>
+          Anda memiliki akun? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>
