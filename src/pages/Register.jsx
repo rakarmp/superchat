@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import React, { Component } from "react";
+import Add from '../img/addAvatar.png';
 
 export class Register extends Component {
   static propTypes = {};
@@ -16,8 +16,8 @@ export class Register extends Component {
             <input type="password" placeholder="password" />
             <input required style={{ display: "none" }} type="file" id="file" />
             <label htmlFor="file">
-              <img src="" alt="" />
-              <span>Add an avatar</span>
+              <img src={Add} alt="Tambahkan Avatar" />
+              <span>Tambahkan Avatar</span>
             </label>
             <button>Sign Up</button>
             <p>sudah punya akun? Login</p>
