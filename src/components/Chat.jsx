@@ -20,6 +20,7 @@ const Chat = () => {
           }}
         />
         <span>{data.user?.displayName}</span>
+        {data.user?.online && <span>Online</span>}
         <div className="chatIcons"></div>
       </div>
       <Messages />
