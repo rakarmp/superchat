@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://user-images.githubusercontent.com/83684256/226094049-65ff42e0-fa3f-4d8f-aa07-77ce4cdad9e4.png" width="200"></a></p>
+<p align="center">
+<a href="#"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Super Chat
 
-## Available Scripts
+Super Chat adalah aplikasi obrolan real-time yang dibangun dengan React dan Firebase. Aplikasi ini memungkinkan pengguna untuk mendaftar dan masuk untuk dapat mengobrol dengan pengguna lain yang juga telah mendaftar. Aplikasi ini menggunakan Firebase untuk manajemen autentikasi dan penyimpanan obrolan. Pengguna juga dapat mengupload foto profil mereka dan foto obrolan.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User authentication: Aplikasi ini memungkinkan pengguna untuk membuat akun dan masuk dengan email dan password mereka menggunakan Firebase Authentication.
+- Real-time message updates: Ketika pengguna mengirim pesan baru, pesan tersebut secara otomatis ditampilkan dalam ruangan chat secara real-time tanpa perlu memuat ulang halaman.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Plugins
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Plugin-plugin yang digunakan dalam pengembangan aplikasi Super Chat yang menggunakan React dan Firebase antara lain:
 
-### `npm test`
+| Plugin           |
+| ---------------- |
+| Firebase         |
+| ReactJS          |
+| React Router Dom |
+| DayJS            |
+| Sass             |
+| UUID             |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Free Software, Hell Yeah!**
