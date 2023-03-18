@@ -219,9 +219,12 @@
                 background-color: #5d5b8d;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
                 padding: 10px;
                 color: lightgray;
+
+                span {
+                    margin-left: 10px;
+                }
             }
 
             .chatIcons {
