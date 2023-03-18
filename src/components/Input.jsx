@@ -22,6 +22,10 @@ const Input = () => {
   const { data } = useContext(ChatContext);
 
   const handleSend = async () => {
+    if (!text) {
+      return; // exit function if there's no text
+    }
+
     if (img) {
       const storageRef = ref(storage, uuid());
 
