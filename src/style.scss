@@ -1,5 +1,5 @@
-@mixin mobile {
-    @media screen and (max-width: 480px) {
+@mixin small-screen {
+    @media screen and (max-width: 360px) {
         @content;
     }
 }
@@ -11,10 +11,35 @@
 }
 
 @mixin laptop {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1024px) {
         @content;
     }
 }
+
+.hide-sidebar {
+    background-color: #3e3c61;
+}
+
+.hide-icons {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hide-icons:hover {
+    background-color: #f2f2f2;
+}
+
+.hide-icons svg {
+    font-size: 1.5rem;
+}
+
 
 .formContainer {
     background-color: #a7bcff;
