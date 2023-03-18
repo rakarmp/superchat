@@ -28,10 +28,10 @@ const Login = () => {
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
           <button>Masuk</button>
-          {err && <span>email atau password salah!</span>}
+          {err && <span>Cek kembali email dan password...</span>}
         </form>
         <p>
-          Anda tidak memiliki akun ? <Link to="/register">Register</Link>
+          Anda tidak memiliki akun? <Link to="/register">Register</Link>
         </p>
       </div>
     </div>
