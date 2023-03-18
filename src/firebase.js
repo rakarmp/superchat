@@ -4,19 +4,15 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCJ0QbKhz1x-1H58sy10PVhh5g1sdlvBK4",
-
-  authDomain: "superchat-bcd3d.firebaseapp.com",
-
-  projectId: "superchat-bcd3d",
-
-  storageBucket: "superchat-bcd3d.appspot.com",
-
-  messagingSenderId: "522309959394",
-
-  appId: "1:522309959394:web:28f92816631e0a785128bb",
+  apiKey: "AIzaSyCKlFrNJ_SZSbEiQQzhLstV42hDeP_Xaws",
+  authDomain: "chat-c66da.firebaseapp.com",
+  projectId: "chat-c66da",
+  storageBucket: "chat-c66da.appspot.com",
+  messagingSenderId: "910406475373",
+  appId: "1:910406475373:web:9ef43d7b8d81239dae6964",
 };
 
+// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 export const storage = getStorage();
