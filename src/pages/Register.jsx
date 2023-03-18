@@ -75,7 +75,7 @@ const Register = () => {
           </label>
           <button disabled={loading}>Register</button>
           {loading && "Mengunggah dan mengompresi gambar harap tunggu..."}
-          {err && <span>Ada yang salah</span>}
+          {err && <span>OK!</span>}
         </form>
         <p>
           Anda memiliki akun? <Link to="/login">Login</Link>
