@@ -1,4 +1,10 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, {
+  useContext,
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+} from "react";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 import dayjs from "dayjs";
@@ -14,16 +20,7 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
-  useEffect(() => {
-    setTime(getTime());
-    const timer = setInterval(() => {
-      setTime(getTime());
-    }, 60000); // update every 1 minute
-
-    return () => clearInterval(timer);
-  }, []);
-
-  const getTime = () => {
+  const getTime = useCallback(() => {
     const now = dayjs();
     const sentAt = dayjs(message.sentAt);
     if (now.diff(sentAt, "day") > 0) {
@@ -31,7 +28,16 @@ const Message = ({ message }) => {
     } else {
       return sentAt.format("HH:mm");
     }
-  };
+  }, [message]);
+
+  useEffect(() => {
+    setTime(getTime());
+    const timer = setInterval(() => {
+      setTime(getTime());
+    }, 60000); // update every 1 minute
+
+    return () => clearInterval(timer);
+  }, [getTime]);
 
   return (
     <div
