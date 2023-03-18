@@ -12,6 +12,10 @@ Super Chat adalah aplikasi obrolan real-time yang dibangun dengan React dan Fire
 - User authentication: Aplikasi ini memungkinkan pengguna untuk membuat akun dan masuk dengan email dan password mereka menggunakan Firebase Authentication.
 - Real-time message updates: Ketika pengguna mengirim pesan baru, pesan tersebut secara otomatis ditampilkan dalam ruangan chat secara real-time tanpa perlu memuat ulang halaman.
 
+## Noted
+
+- Cari teman menggunakan username mereka
+
 ## Plugins
 
 Plugin-plugin yang digunakan dalam pengembangan aplikasi Super Chat yang menggunakan React dan Firebase antara lain:
